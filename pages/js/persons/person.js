@@ -1,8 +1,3 @@
-import "./style.css"
-import "bootstrap/dist/css/bootstrap.css"
-
-
-//fetch("http://localhost:8080/RESTfullPerson_war_exploded/api/person").then(res=>res.json()).then(data=>{console.log(data);})
 
 
 const data = { fName: 'KRIST', lName: "Larsen", phone:"3333333" };

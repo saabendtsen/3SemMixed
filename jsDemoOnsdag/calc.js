@@ -15,11 +15,8 @@ calc.onclick = (evt) => {
 }
 
 function checkSymbol(){
-    let index;
-    let stringNr = numbers.join("");
+     let stringNr = numbers.join("");
     let res;
-    let first;
-    let sekund;
     if(numbers.indexOf("+")){
         stringNr = stringNr.split("+");
         res = parseInt(stringNr[0]) + parseInt(stringNr[1]);
@@ -27,17 +24,17 @@ function checkSymbol(){
         numbers = [];    
     }else if(numbers.indexOf("-")){
         stringNr = stringNr.split("-");
-        res = parseInt(stringNr[0]) + parseInt(stringNr[1]);
+        res = parseInt(stringNr[0]) - parseInt(stringNr[1]);
         display.innerHTML = res;
         numbers = [];    
     }else if(numbers.indexOf("*")){
         stringNr = stringNr.split("*");
-        res = parseInt(stringNr[0]) + parseInt(stringNr[1]);
+        res = parseInt(stringNr[0]) * parseInt(stringNr[1]);
         display.innerHTML = res;
         numbers = [];    
     }else if(numbers.indexOf("/")){
         stringNr = stringNr.split("/");
-        res = parseInt(stringNr[0]) + parseInt(stringNr[1]);
+        res = parseInt(stringNr[0]) / parseInt(stringNr[1]);
         display.innerHTML = res;
         numbers = [];    
     }

@@ -6,7 +6,7 @@ import dtos.PersonsDTO;
 import java.util.List;
 
 public interface IPersonFacade {
-    public PersonDTO addPerson(String fName, String lName, String phone);
+    public PersonDTO addPerson(String fname, String Lname, String phone);
     public PersonDTO deletePerson(int id);
     public PersonDTO getPerson(int id);
     public PersonsDTO getAllPersons();

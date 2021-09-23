@@ -1,5 +1,7 @@
 package entities;
 
+import dtos.PersonDTO;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -62,6 +64,15 @@ public class Person {
     public void setLastEdited(Date lastEdited) {
         this.lastEdited = lastEdited;
     }
+    public Person(PersonDTO pDTO){
+        this.id = pDTO.getId();
+        this.firstName = pDTO.getFirstName();
+        this.lastName = pDTO.getLastName();
+        this.phone = pDTO.getPhone();
+        this.created = new Date();
+        this.lastEdited = new Date();
+    }
+
 
     public Person(String firstName, String lastName, String phone, Date created, Date lastEdited) {
         this.firstName = firstName;

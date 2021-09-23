@@ -11,4 +11,8 @@ divs[2].style.backgroundColor = "blue";
 
 }
 
+fetch("https://api.chucknorris.io/jokes/random").then((el)=> el.json().then((data)=>{
+    document.getElementById("div1").innerHTML = data.value;
+}))
+
 btn.onclick = changeColor;
